@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(./../fonts/Montserrat-Medium.ttf) format("ttf"),
+    url(./../fonts/Montserrat-Medium.woff) format("woff"),
+    url(./../fonts/Montserrat-Medium.woff2) format("woff2");
+
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(./../fonts/Montserrat-Bold.ttf) format("ttf"),
+    url(./../fonts/Montserrat-Bold.woff) format("woff"),
+    url(./../fonts/Montserrat-Bold.woff2) format("woff2");
+
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Space Mono";
+  src: url(./../fonts/SpaceMono-Regular.ttf) format("ttf"),
+    url(./../fonts/SpaceMono-Regular.woff) format("woff"),
+    url(./../fonts/SpaceMono-Regular.woff2) format("woff2");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Space Mono";
+  src: url(./../fonts/SpaceMono-Bold.ttf) format("ttf"),
+    url(./../fonts/SpaceMono-Bold.woff) format("woff"),
+    url(./../fonts/SpaceMono-Bold.woff2) format("woff2");
+
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inconsolata";
+  src: url(./../fonts/Inconsolata-Bold.ttf) format("ttf"),
+    url(./../fonts/Inconsolata-Bold.woff) format("woff"),
+    url(./../fonts/Inconsolata-Bold.woff2) format("woff2");
+
+  font-weight: 700;
+  font-style: normal;
+}

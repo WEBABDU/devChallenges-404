@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-primary: "Space Mono";
+  --ff-secondary: "Montserrat";
+  --ff-logo: "Inconsolata";
+
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-700: 700;
+
+  --clr-neutral-100: #ffffff;
+  --clr-neutral-200: #bdbdbd;
+  --clr-neutral-300: #4f4f4f;
+  --clr-neutral-400: #333333;
+
+  --fs-100: 14px;
+  --fs-200: 18px;
+  --fs-300: 24px;
+  --fs-400: 48px;
+}
+
+body {
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-400);
+  color: var(--clr-neutral-300);
+  font-size: var(--fs-100);
+}
+
+/* composition */
+
+.flow > * + * {
+  margin-top: var(--flow-spacer, 16px);
+}
+
+
+/* utilityes */
+
+
+.container {
+  --max-width: 1363px;
+  --container-padding: 20px;
+  width: 100%;
+  width: min(var(--max-width), 100% - (var(--container-padding) * 2));
+  margin-inline: auto;
+}
+
+.margin-top{
+    margin-top: var(--margin-top, 30px);
+}
+
+.clr-neutral-100 {
+  color: var(--clr-neutral-100);
+}
+.clr-neutral-200 {
+  color: var(--clr-neutral-200);
+}
+.clr-neutral-300 {
+  color: var(--clr-neutral-300);
+}
+.clr-neutral-400 {
+  color: var(--clr-neutral-400);
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fs-100 {
+  font-size: var(--fs-100);
+}
+
+.fs-200 {
+  font-size: var(--fs-200);
+}
+
+.fs-300 {
+  font-size: var(--fs-300);
+}
+
+.fs-400 {
+  font-size: var(--fs-400);
+}
+
+/* block */
+
+.logo {
+  font-family: var(--ff-logo);
+  text-transform: uppercase;
+}
+
+.hero{
+    --margin-top: 64px;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.hero__title {
+  line-height: 1.47;
+}
+
+.hero__text{
+    --flow-spacer: 30px;
+    line-height: 1.5;
+}
+
+.hero__img img {
+  width: 100%;
+  max-width: 539px;
+  object-fit: cover;
+}
+
+.btn{
+    --flow-spacer: 66px;
+    min-width: 216px;
+    min-height: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    background-color: var(--clr-neutral-400);
+}
+
+.footer{
+    --margin-top: 114px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 576px) {
+  :root {
+    --fs-200: 24px;
+    --fs-400: 64px;
+  }
+
+  .hero__content {
+    flex-direction: row;
+  }
+
+  .hero__img,
+  .hero__description {
+    width: 50%;
+  }
+}
