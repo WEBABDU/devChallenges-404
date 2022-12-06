@@ -37,9 +37,7 @@ body {
   margin-top: var(--flow-spacer, 16px);
 }
 
-
 /* utilityes */
-
 
 .container {
   --max-width: 1363px;
@@ -49,8 +47,8 @@ body {
   margin-inline: auto;
 }
 
-.margin-top{
-    margin-top: var(--margin-top, 30px);
+.margin-top {
+  margin-top: var(--margin-top, 30px);
 }
 
 .clr-neutral-100 {
@@ -96,13 +94,17 @@ body {
 
 /* block */
 
+.header {
+  --margin-top: 20px;
+}
+
 .logo {
   font-family: var(--ff-logo);
   text-transform: uppercase;
 }
 
-.hero{
-    --margin-top: 64px;
+.hero {
+  --margin-top: 64px;
 }
 
 .hero__content {
@@ -115,9 +117,9 @@ body {
   line-height: 1.47;
 }
 
-.hero__text{
-    --flow-spacer: 30px;
-    line-height: 1.5;
+.hero__text {
+  --flow-spacer: 30px;
+  line-height: 1.5;
 }
 
 .hero__img img {
@@ -126,28 +128,32 @@ body {
   object-fit: cover;
 }
 
-.btn{
-    --flow-spacer: 66px;
-    min-width: 216px;
-    min-height: 66px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    outline: none;
-    text-transform: uppercase;
-    background-color: var(--clr-neutral-400);
+.btn {
+  --flow-spacer: 66px;
+  min-width: 216px;
+  min-height: 66px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  background-color: var(--clr-neutral-400);
 }
 
-.footer{
-    --margin-top: 114px;
-    text-align: center;
+.footer {
+  --margin-top: 114px;
+  text-align: center;
 }
 
 @media only screen and (min-width: 576px) {
   :root {
     --fs-200: 24px;
     --fs-400: 64px;
+  }
+
+  .header {
+    --margin-top: 40px;
   }
 
   .hero__content {
